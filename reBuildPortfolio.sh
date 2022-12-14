@@ -1,19 +1,12 @@
 #!/usr/bin/sh
 
-cd /home/leadseason/Portfolio
+cd ~/Portfolio
 
 rm -rf dist/
 
-git pull
+git pull || echo failed; exit 10
 
-if [ $? -eq 0 ]; then
-  echo success
-else
-  echo failed
-  exit 130
-fi
-
-npm run build
+npm run build || echo failed; exit 12
 
 sudo rm -r /var/www/html/*
 sudo cp -r /home/leadseason/Portfolio/dist/* /var/www/html/
