@@ -2,24 +2,7 @@
 <html lang="en" class="sr">
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-	<title>Pauli Tiittanen | ICT-Asentaja</title>
-	<meta name="keywords"
-		content="LeadSeason, Pauli Tiittanen, netops, sysops, network administration, systems administration, linux, ubuntu, archlinux, debian, quanta, opnsense, pfsense, proxmox, vmware, esxi" />
-	<meta name="description" content="Pauli Tiittanen | ICT-Asentaja" />
-	<meta property="og:title" content="Pauli Tiittanen | ICT-Asentaja" />
-	<meta content="Olen Pauli Tiittanen. Olen 19-vuotias ja valmistunut ICT-asentajaksi Keski-Pohjanmaan
-							ammattiopistosta 2021. Etsin työtehtäviä, jossa voin työskennellä tietokoneiden, verkko- ja
-							käyttöjärjestelmien parissa. Työntekijänä olen tunnolinen, ahkera ja nopea oppimaan uutta."
-		property="og:description">
-	<meta property="og:url" content="https://pauli.work" />
-	<meta property="og:image" content="assets/profile.jpg" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="styles.scss" />
-	<script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <include src="./src/common/head.html"></include>
 </head>
 
 <body>
@@ -28,12 +11,12 @@
 	<!-- **** Hero Section **** -->
 	<section id="hero" class="jumbotron">
 		<div class="container">
-			<h1 class="hero-title load-hidden" style="color:rgb(255, 255, 255); text-shadow: 2px 2px 5px black;">
+			<h1 class="hero-title" style="color:rgb(255, 255, 255); text-shadow: 2px 2px 5px black;">
 				<span class="" style="color:#fff">Pauli Tiittanen</span>
 				<br />
 				ICT-Asentaja
 			</h1>
-			<p class="hero-cta load-hidden">
+			<p class="hero-cta">
 				<a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Tutustu</a>
 			</p>
 		</div>
@@ -43,18 +26,18 @@
 	<!-- **** About Section **** -->
 	<section id="about">
 		<div class="container">
-			<h2 class="section-title load-hidden">Minusta</h2>
+			<h2 class="section-title ">Minusta</h2>
 			<div class="row about-wrapper">
 				<div class="col-md-6 col-sm-12">
-					<div class="about-wrapper__image load-hidden">
+					<div class="about-wrapper__image">
 						<img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
 							src="assets/profile.jpg" alt="Profile Image" />
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div class="about-wrapper__info load-hidden">
+					<div class="about-wrapper__info ">
 						<p class="about-wrapper__info-text">
-							Olen Pauli Tiittanen. Olen 19-vuotias ja valmistunut ICT-asentajaksi Keski-Pohjanmaan
+							Olen Pauli Tiittanen. Olen 20-vuotias ja valmistunut ICT-asentajaksi Keski-Pohjanmaan
 							ammattiopistosta 2021. Etsin työtehtäviä, jossa voin työskennellä tietokoneiden, verkko- ja
 							käyttöjärjestelmien parissa. Työntekijänä olen tunnolinen, ahkera ja nopea oppimaan uutta.
 						</p>
@@ -82,7 +65,7 @@
 				<!-- Homelab project -->
 				<div class="row">
 					<div class="col-lg-4 col-sm-12">
-						<div class="project-wrapper__text load-hidden">
+						<div class="project-wrapper__text ">
 							<h3 class="project-wrapper__text-title">Palvelimet, Verkot, ja Tietokoneet: Homelab</h3>
 							<div>
 								<p class="mb-4">
@@ -97,7 +80,7 @@
 						</div>
 					</div>
 					<div class="col-lg-8 col-sm-12">
-						<div class="project-wrapper__image load-hidden">
+						<div class="project-wrapper__image ">
 							<a rel="noreferrer" href="#!">
 								<div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.3"
 									class="thumbnail rounded js-tilt">
@@ -114,7 +97,7 @@
 				<!-- 3D priting project -->
 				<div class="row">
 					<div class="col-lg-4 col-sm-12">
-						<div class="project-wrapper__text load-hidden">
+						<div class="project-wrapper__text ">
 							<h3 class="project-wrapper__text-title">3D tulostettu DUDE logo</h3>
 							<div>
 								<p class="mb-4">
@@ -127,7 +110,7 @@
 						</div>
 					</div>
 					<div class="col-lg-8 col-sm-12">
-						<div class="project-wrapper__image load-hidden">
+						<div class="project-wrapper__image ">
 							<a rel="noreferrer" href="#!">
 								<div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.3"
 									class="thumbnail rounded js-tilt">
@@ -155,62 +138,9 @@
 	</section>
 	<!-- /END Projects Section -->
 
-	<!-- **** Contact Section **** -->
-	<section id="contact">
-		<div class="container" id="contact-container">
-			<h2 class="section-title">Ota Yhteyttä</h2>
-			<div class="contact-wrapper load-hidden">
-				<!-- <p class="contact-wrapper__text">[Put your call to action here]</p> -->
-				<a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
-					href="mailto:pauli.tiittanen@pauli.work">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</a>
-				<a rel="noreferrer" href="#_" class="cta-btn cta-btn--resume" id="showPhone">
-					<i class="fa fa-phone" aria-hidden="true"></i>
-				</a>
-				<a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="https://pauli.work/linkedin">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="contact-data-wrapper" id="contactShowData">
-			</div>
-		</div>
-	</section>
-	<!-- /END Contact Section -->
-
-	<!-- **** Footer Section **** -->
-	<footer class="footer navbar-static-bottom">
-		<div class="container">
-			<a rel="noreferrer" href="#top" class="back-to-top">
-				<i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-			</a>
-
-			<div class="social-links">
-				<a rel="noreferrer" href="https://pauli.work/linkedin" target="_blank">
-					<i class="fa fa-linkedin fa-inverse"></i>
-				</a>
-				<a rel="noreferrer" href="https://github.com/LeadSeason" target="_blank">
-					<i class="fa fa-github fa-inverse"></i>
-				</a>
-				<a rel="noreferrer" href="https://reddit.com/user/leadseason?" target="_blank">
-					<i class="fa fa-reddit-alien fa-inverse"></i>
-				</a>
-			</div>
-
-			<hr />
-
-			<!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-			<p class="footer__text">
-				<a href="./404.html"></a>
-				© 2022 - Modified by Pauli Tiittanen using
-				<a href="https://github.com/cobiwave/simplefolio" style="color: #fff">simplefolio</a> template
-			</p>
-		</div>
-	</footer>
-	<!-- /END Footer Section -->
-
-	<script defer type="module" src="index.js">
-	</script>
+    <include src="./src/common/footer.html"></include>
+	<!-- 404 page has to be refrenced somewhere or else it wont build -->
+	<a href="./404.html"></a>
 </body>
 
 </html>

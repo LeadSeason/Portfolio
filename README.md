@@ -4,7 +4,6 @@
 Portfolio made created with <a href="https://github.com/cobiwave/simplefolio">Simplefolio</a> template  
 and hosted at hetzner with love ❤️
 
-# Update? 
-Yeah this needs some work.  
-And need simplefication with  posthtml-include
-Maybe no fade in animation for everything.
+# 2.1.0 update
+Greatly simplified with posthtml-include
+And removed fade in animation was qute clumsy

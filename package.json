@@ -1,34 +1,40 @@
 {
-	"name": "simplefolio",
-	"version": "1.0.1",
+	"name": "portfolio",
+	"version": "2.1.0",
 	"private": "true",
-	"description": "A clean, beautiful and responsive portfolio template for Developers!",
+	"description": "Pauli Tiittanen portfolio",
 	"source": "src/index.html",
 	"scripts": {
-		"start": "parcel",
-		"build": "parcel build"
+		"start": "parcel src/index.html",
+		"build": "parcel build src/index.html"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/LeadSeason/portfolio"
 	},
 	"keywords": [],
-	"author": "Jacobo Martinez",
-	"license": "ISC",
+	"author": "Leadseason",
+	"license": "GPL3",
 	"bugs": {
 		"url": "https://github.com/LeadSeason/portfolio/issues"
 	},
 	"homepage": "https://pauli.work",
-	"devDependencies": {
-		"@parcel/transformer-sass": "^2.0.1",
-		"parcel": "^2.0.1",
-		"prettier": "^2.4.1"
-	},
 	"dependencies": {
-		"@popperjs/core": "^2.10.2",
-		"bootstrap": "^5.1.3",
-		"jquery": "^3.6.0",
-		"popper.js": "^1.16.1",
-		"vanilla-tilt": "^1.7.2"
+		"@fortawesome/fontawesome-free": "6.4.2",
+		"@popperjs/core": "2.11.8",
+		"@babel/preset-env": "7.13.8",
+		"bootstrap": "5.3.2",
+		"dayjs": "1.11.10",
+		"jquery": "3.7.1",
+		"parcel-bundler": "1.12.5",
+		"popper.js": "1.16.1",
+		"posthtml-doctype": "1.1.1"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "2.10.2",
+		"parcel": "^1.12.4",
+		"posthtml-include": "1.7.4",
+		"prettier": "3.0.3",
+		"sass": "1.69.5"
 	}
 }

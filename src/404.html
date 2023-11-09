@@ -2,36 +2,11 @@
 <html lang="en" class="sr">
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="shortcut icon" type="image/png" href="/src/assets/favicon.png" />
-	<title>Pauli Tiittanen | ICT-Asentaja</title>
-	<meta name="keywords"
-		content="LeadSeason, Pauli Tiittanen, netops, sysops, network administration, systems administration, linux, ubuntu, archlinux, debian, quanta, opnsense, pfsense, proxmox, vmware, esxi" />
-	<meta name="description" content="Pauli Tiittanen | ICT-Asentaja" />
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="/src/styles.scss" />
-	<script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <include src="./src/common/head.html"></include>
 </head>
 
 <body>
-	<div id="top"></div>
-
-	<!-- **** Back button Section **** -->
-	<section id="about">
-		<div class="container">
-			<div class="about-wrapper__info load-hidden">
-				<span class="d-flex mt-3">
-					<a rel="noreferrer" class="cta-btn cta-btn--resume" href="./index.html">
-						<i class="fa fa-chevron-left" aria-hidden="true"></i> Takaisin
-					</a>
-				</span>
-			</div>
-		</div>
-	</section>
-	<!-- /END About Section -->
+    <include src="./src/common/navbar.html"></include>
 
 	<!-- **** Projects Section **** -->
 	<section id="projects">
@@ -42,11 +17,11 @@
 				<!-- Notice: each .row is a project -->
 				<div class="row">
 					<div class="col">
-						<div class="project-wrapper__image load-hidden">
+						<div class="project-wrapper__image ">
 							<a rel="noreferrer" href="#!">
 								<div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.3"
 									class="thumbnail rounded js-tilt">
-									<img alt="Project Image" class="img-fluid" src="/src/assets/404.png" />
+									<img alt="Project Image" class="img-fluid" src="/assets/404.png" />
 								</div>
 							</a>
 						</div>
@@ -58,61 +33,7 @@
 	</section>
 	<!-- /END Projects Section -->
 
-	<!-- **** Contact Section **** -->
-	<section id="contact">
-		<div class="container" id="contact-container">
-			<h2 class="section-title">Ota Yhteyttä</h2>
-			<div class="contact-wrapper load-hidden">
-				<!-- <p class="contact-wrapper__text">[Put your call to action here]</p> -->
-				<a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
-					href="mailto:pauli.tiittanen@pauli.work">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</a>
-				<a rel="noreferrer" href="#_" class="cta-btn cta-btn--resume" id="showPhone">
-					<i class="fa fa-phone" aria-hidden="true"></i>
-				</a>
-				<a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="https://pauli.work/linkedin">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="contact-data-wrapper" id="contactShowData">
-			</div>
-		</div>
-	</section>
-	<!-- /END Contact Section -->
-
-	<!-- **** Footer Section **** -->
-	<footer class="footer navbar-static-bottom">
-		<div class="container">
-			<a rel="noreferrer" href="#top" class="back-to-top">
-				<i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-			</a>
-
-			<div class="social-links">
-				<a rel="noreferrer" href="https://pauli.work/linkedin" target="_blank">
-					<i class="fa fa-linkedin fa-inverse"></i>
-				</a>
-				<a rel="noreferrer" href="https://github.com/LeadSeason" target="_blank">
-					<i class="fa fa-github fa-inverse"></i>
-				</a>
-				<a rel="noreferrer" href="https://reddit.com/user/leadseason?" target="_blank">
-					<i class="fa fa-reddit-alien fa-inverse"></i>
-				</a>
-			</div>
-
-			<hr />
-
-			<!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-			<p class="footer__text">
-				© 2022 - Modified by Pauli Tiittanen using
-				<a href="https://github.com/cobiwave/simplefolio" style="color: #fff">simplefolio</a> template
-			</p>
-		</div>
-	</footer>
-	<!-- /END Footer Section -->
-
-	<script defer type="module" src="/src/index.js">
-	</script>
+    <include src="./src/common/footer.html"></include>
 </body>
 
 </html>
